@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import toast from "react-hot-toast";
 
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
@@ -39,6 +40,7 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false)
   const handleCopy = () => {
     navigator.clipboard.writeText('hanitrp@gmail.com')
+    toast.success('Copied to clipboard!')
     setCopied(true)
   }
 
@@ -125,7 +127,7 @@ export const BentoGridItem = ({
                 </div>
 
                 <MagicButton 
-                title={copied ? "Copied!" : "Get in touch"} 
+                title={copied ? "Copied!" : "Copy my email"} 
                 icon={<IoCopyOutline />} 
                 position="right" 
                 handleClick={handleCopy}

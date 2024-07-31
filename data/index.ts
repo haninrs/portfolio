@@ -1,7 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -196,14 +195,20 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    name : "GitHub",
+    image: "/git.svg",
+    link: "https://github.com/haninrs",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    name : "Instagram",
+    image: "/ig.svg",
+    link : "https://www.instagram.com/hanitrp/"
   },
   {
     id: 3,
-    img: "/link.svg",
+    name : "LinkedIn",
+    image: "/link.svg",
+    link : "https://www.linkedin.com/in/hanitrp/"
   },
 ];

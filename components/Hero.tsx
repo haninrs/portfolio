@@ -4,8 +4,11 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 const Hero = () => {
+  const cvLink="https://drive.google.com/file/d/12UZZxK9dexq9-N8dxYBJq4hSvmxOGlvh/view?usp=sharing"
+
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -29,10 +32,11 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Hi, I&apos;m Hani, a web developer based in Indonesia.
+          Hi, I&apos;m Hani, a web developer based in Jakarta, Indonesia.
           
           </p>
 
+          <div className="flex justify-center flex-col md:flex-row gap-3">
           <Link href="#projects">
             <MagicButton 
                 title="Show my projects" 
@@ -40,6 +44,15 @@ const Hero = () => {
                 position="right"
             />
           </Link>
+          
+          <Link href={cvLink} target="_blank">
+            <MagicButton 
+                title="Look my CV" 
+                icon={<PiReadCvLogoFill size={20}/>}
+                position="right"
+            />
+          </Link>
+          </div>
         </div>
       </div>
     </div>

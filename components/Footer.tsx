@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className='flex mt-16 md:flex-row flex-col items-center justify-between gap-2 md:gap-0'>
-            <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2024 Hani Nur Aisyah</p>
+            <p className='md:text-base text-sm md:font-normal font-light'>Copyright &copy; {new Date().getFullYear()} Hani Nur Aisyah</p>
 
             <div className='flex items-center md:gap-3 gap-6'>
                 <AnimatedTooltip items={socialMedia}/>

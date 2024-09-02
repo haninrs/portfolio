@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -9,6 +8,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
@@ -55,7 +55,8 @@ export const BentoGridItem = ({
         <div className={`${id === 6 && 'flex justify-center'} h-full`}>
           <div className="w-full h-full absolute">
             {img && (
-              <img
+              <Image
+                fill
                 src={img}
                 alt={img}
                 className={cn(imgClassName, "object-cover object-center")}
@@ -64,7 +65,8 @@ export const BentoGridItem = ({
           </div>
           <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
             {spareImg && (
-              <img
+              <Image
+                fill
                 src={spareImg}
                 alt={spareImg}
                 className="object-cover object-center h-full w-full"

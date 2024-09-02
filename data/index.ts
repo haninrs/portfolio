@@ -74,7 +74,7 @@ export const projects = [
     title: "GAMESTART - Company Profile Website",
     des: "A company profile website for a gaming startup. Built with Next.js, TypeScript, and Tailwind CSS.",
     img: "/p1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "https://company-gamestart.vercel.app/",
   },
   {
@@ -87,12 +87,20 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Shopol - E-commerce Admin Dashboard App",
+    title: "Shopol Admin - E-commerce Admin Dashboard App",
     des: "An admin dashboard e-commerce app. Built with Next.js, TypeScript, Tailwind CSS, Prisma ORM, and PostgreSQL.",
-    img: "/",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "prisma.png", "/c.svg"],
-    link: "https://github.com/haninrs/Shopol",
+    img: "/shopol.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "prisma.png", "/c.svg"],
+    link: "https://shopol-admin.vercel.app",
   },
+  // {
+  //   id: 4,
+  //   title: "Shopol Store - E-commerce App",
+  //   des: "An e-commerce application that enables users to conduct secure transactions. Built with Next.js, TypeScript, and Tailwind CSS.",
+  //   img: "/shopol.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+  //   link: "https://shopol-admin.vercel.app",
+  // },
 ];
 
 export const testimonials = [

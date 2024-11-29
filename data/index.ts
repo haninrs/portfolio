@@ -85,14 +85,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/express.png", "mysql.png", "prisma.png"],
     link: "https://jcwd030803.purwadhikabootcamp.com/",
   },
-  {
-    id: 3,
-    title: "Shopol Admin - E-commerce Admin Dashboard App",
-    des: "An admin dashboard e-commerce app. Built with Next.js, TypeScript, Tailwind CSS, Prisma ORM, and PostgreSQL.",
-    img: "/shopol.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "prisma.png", "/c.svg"],
-    link: "https://shopol-admin.vercel.app",
-  },
+  // {
+  //   id: 3,
+  //   title: "Shopol Admin - E-commerce Admin Dashboard App",
+  //   des: "An admin dashboard e-commerce app. Built with Next.js, TypeScript, Tailwind CSS, Prisma ORM, and PostgreSQL.",
+  //   img: "/shopol.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "prisma.png", "/c.svg"],
+  //   link: "https://shopol-admin.vercel.app",
+  // },
   // {
   //   id: 4,
   //   title: "Shopol Store - E-commerce App",
